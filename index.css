@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background: #0C1A2E;
+  color: #E2EBF5;
+  min-height: 100vh;
+}
+
+html { scroll-behavior: smooth; }
+
+.glass {
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.gold-text { color: #BA7517; }
+.blue-text { color: #378ADD; }
+
+.btn-gold {
+  background: linear-gradient(135deg, #BA7517, #EF9F27);
+  color: #fff;
+  font-weight: 600;
+  border-radius: 12px;
+  transition: all 0.2s;
+}
+.btn-gold:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(186,117,23,0.35); }
+
+.btn-blue {
+  background: linear-gradient(135deg, #185FA5, #378ADD);
+  color: #fff;
+  font-weight: 600;
+  border-radius: 12px;
+  transition: all 0.2s;
+}
+.btn-blue:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(24,95,165,0.4); }
+
+.card {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 16px;
+}
+
+.status-active   { color: #22c55e; }
+.status-pending  { color: #eab308; }
+.status-ended    { color: #ef4444; }
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #0C1A2E; }
+::-webkit-scrollbar-thumb { background: #185FA5; border-radius: 3px; }
